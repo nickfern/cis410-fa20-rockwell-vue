@@ -12,6 +12,9 @@ export default new Vuex.Store({
     mutations:{
         storeTokenInApp(state, myToken){
             state.token = myToken
+        },
+        storeUserInApp(state, myUser){
+            state.user = myUser 
         }
     },
     actions:{
