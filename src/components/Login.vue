@@ -41,9 +41,9 @@ export default {
                 password: this.password
             };
 
-            //console.log("form data:", myFormData)
+            console.log("form data:", myFormData)
 
-            axios.post("/contacts/login", myFormData)
+            axios.post("/Customer/login", myFormData)
                 .then(myResponse=>{
                     console.log("here is my response", myResponse)
 

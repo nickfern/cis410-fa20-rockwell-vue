@@ -36,14 +36,14 @@ export default {
         onSubmit(){
 
             const myFormData = {
-                nameFirst: this.nameFirst,
-                nameLast: this.nameLast,
-                email: this.email,
-                password: this.password
+                FirstName: this.nameFirst,
+                LastName: this.nameLast,
+                Email: this.email,
+                Password: this.password
             }
-            //console.log(myFormData)
+            console.log(myFormData)
 
-            axios.post("/contacts", myFormData)
+            axios.post("/Customer", myFormData)
                 .then((myResponse)=>{
                     // console.log(myResponse)
                     this.$router.replace("/signin?signupsuccess=true")
