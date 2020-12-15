@@ -48,7 +48,7 @@ export default {
 
             console.log("here is the order", myOrder)
             const token = this.$store.state.token;
-            axios.post("/tickets",myOrder,{
+            axios.post("/Order1",myOrder,{
                 headers:{
                     Authorization: `Bearer ${token}`
                 }
