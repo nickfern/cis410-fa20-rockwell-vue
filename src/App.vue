@@ -25,6 +25,10 @@ export default {
   },
   components:{
     "app-header": Header
+  },
+  created(){
+    console.log("app created")
+    this.$store.dispatch("getConcerts")
   }
 }
 </script>

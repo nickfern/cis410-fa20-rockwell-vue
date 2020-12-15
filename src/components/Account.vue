@@ -46,7 +46,7 @@ export default {
             }
         })
         .then((response)=>{
-            console.log("here is the orders response", response)
+            console.log("here is the orders/me response", response)
             this.ordersByUser = response.data
             })
         .catch(()=>{
