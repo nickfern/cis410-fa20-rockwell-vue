@@ -22,7 +22,7 @@ const routes = [
     {path: '/concerts', component: Concerts},
     {path: '/concerts/:pk', component: ConcertDetail,
             children: [
-                {path: 'Tickets', component: TicketCreate}
+                {path: 'tickets', component: TicketCreate}
             ]},
     {path: '/signup', component: SignUp},
     {path: '/:invalidroute(.*)', component: NotFound}

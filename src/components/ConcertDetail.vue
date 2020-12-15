@@ -10,14 +10,16 @@
             </div>
         </div>
         <br/>
-        <router-link v-if="auth" :to="`/concerts/${this.$route.params.pk}/order`">
+        <router-link v-if="auth" :to="`/concerts/${this.$route.params.pk}/tickets`">
         <button type="button" class="btn btn-success">Order a Ticket</button>
         </router-link>
 
         <router-link v-else :to="`/signin`">
         <button type="button" class="btn btn-outline-success">Sign in to order a ticket</button>
         </router-link>
-        
+        <br/>
+        <br/>
+        <router-view></router-view>
      </div>
 </template>
 
